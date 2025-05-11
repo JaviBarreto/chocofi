@@ -3,9 +3,9 @@
         default_layer {
             bindings = <
                 &kp QUOT  &kp COMM  &kp DOT   &kp P     &kp Y       &kp F     &kp G     &kp C     &kp R     &kp L
-                &hm LCTRL A &hm LALT O &hm LSHFT E &hm LGUI U  &kp I  &kp D  &hm RGUI H &hm RCTRL T &hm RALT N &hm RSHFT S
+                &ht LCTRL A &ht LALT O &ht LSHFT E &ht LGUI U  &kp I  &kp D  &ht RGUI H &ht RCTRL T &ht RALT N &ht RSHFT S
                 &kp SCLN  &kp Q     &kp J     &kp K     &kp X       &kp B     &kp M     &kp W     &kp V     &kp Z
-                                 &lt 2 SPACE  &kp ENTER   &kp TAB   &lt 1 BSPC
+                                &lt 2 SPACE  &kp ENTER   &kp TAB   &lt 1 BSPC
             >;
         };
 
@@ -14,7 +14,7 @@
                 &kp ESC   &kp HOME  &kp UP    &kp END   &kp PG_UP   &trans    &trans    &trans    &trans    &trans
                 &kp TAB   &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN   &trans    &trans    &trans    &trans    &trans
                 &kp LCTL  &kp LALT  &kp LSHFT &kp LGUI  &kp DEL     &trans    &trans    &trans    &trans    &trans
-                                   &trans     &trans     &trans     &trans
+                            &trans     &trans     &trans     &trans
             >;
         };
 
@@ -23,7 +23,7 @@
                 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CIRC  &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
                 &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH    &kp UNDERSCORE &kp PLUS &kp LCURLY &kp RCURLY &kp PIPE
                 &kp GRAVE &kp TILDE &kp COLON &kp SCLN  &kp QUOT    &kp DQT   &kp LT    &kp GT    &kp FSLH  &kp QMARK
-                                      &trans     &trans     &trans     &trans
+                                &trans     &trans     &trans     &trans
             >;
         };
 
@@ -32,16 +32,16 @@
                 &kp F1    &kp F2    &kp F3    &kp F4    &kp F5      &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
                 &kp F11   &kp F12   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans
                 &sys_reset &bootloader &trans &trans &trans &trans &trans &trans &trans &trans
-                                      &trans     &trans     &trans     &trans
+                                &trans     &trans     &trans     &trans
             >;
         };
 
         macros_layer {
             bindings = <
-                &macro_git_commit &macro_npm_dev &macro_php_artisan &macro_vscode &trans
                 &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans
-                                      &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                                &trans &trans &trans &trans
             >;
         };
     };
